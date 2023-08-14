@@ -10,8 +10,8 @@ export const environment = {
     messagingSenderId: '175796012556',
     measurementId: 'G-6RG5GHN0PV',
   },
-  API_GRAPHQL_URL: 'https://note-app-api-5uck.onrender.com/graphql',
+  API_GRAPHQL_URL: 'https://note-app-api-bwqa.onrender.com/graphql',
   API_GRAPHQL_URL_LOCAL: 'http://localhost:3000/graphql',
-  WEB_SOCKET_GRAPHQL_URL: 'wss://note-app-api-5uck.onrender.com/graphql',
+  WEB_SOCKET_GRAPHQL_URL: 'wss://note-app-api-bwqa.onrender.com/graphql',
   WEB_SOCKET_GRAPHQL_URL_LOCAL: 'ws://localhost:3000/graphql',
 };
