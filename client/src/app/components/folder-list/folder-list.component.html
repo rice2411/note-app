@@ -1,0 +1,31 @@
+<div class="folder-list">
+  <div style="padding: 10px">
+    <div class="sub-header">
+      <h3>Folders</h3>
+      <mat-icon (click)="openDialog()" matTooltip="New Folder"
+        >create_new_folder
+      </mat-icon>
+    </div>
+    <div *ngIf="folders.length > 0">
+      <div
+        (click)="accessFolder(folder._id)"
+        style="
+          min-width: 200px;
+          text-decoration: none;
+          margin-bottom: 5px;
+          cursor: pointer;
+        "
+        *ngFor="let folder of folders"
+      >
+        <mat-card class="{{ folder._id === folderId ? 'active' : '' }}">
+          <mat-card-content>
+            <div>{{ folder.name }}</div>
+            <p style="font-size: 10px">
+              {{ folder.author.name }}
+            </p>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+</div>

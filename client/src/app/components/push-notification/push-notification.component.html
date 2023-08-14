@@ -1,0 +1,10 @@
+<mat-icon
+  matBadge="{{ counter }}"
+  matBadgeColor="warn"
+  [matMenuTriggerFor]="menu"
+  class="{{ counter != 0 ? 'is-has-data' : 'is-empty' }}"
+  >notifications</mat-icon
+>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item>{{ noti?.content }}</button>
+</mat-menu>

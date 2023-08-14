@@ -1,0 +1,71 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type MessageGraphQLModel {
+  content: String
+}
+
+type AuthorGraphQLModel {
+  _id: String!
+  name: String!
+  uid: String!
+}
+
+type NoteGraphQLModel {
+  _id: String!
+  content: String!
+  folderId: String!
+  updatedAt: Date!
+}
+
+type FolderGraphQLModel {
+  _id: String!
+  name: String!
+  createdAt: String!
+  author: AuthorGraphQLModel!
+  notes: [NoteGraphQLModel!]!
+}
+
+"""Date custom scalar type"""
+scalar Date
+
+type Query {
+  folders: [FolderGraphQLModel!]!
+  getNoteById(noteId: String!): NoteGraphQLModel!
+  getNotesByFolderId(folderId: String!): [NoteGraphQLModel!]!
+}
+
+type Mutation {
+  pushNotification(messageRequest: MessageRequest!): MessageGraphQLModel!
+  createFolder(folderRequest: FolderRequest!): FolderGraphQLModel!
+  createNote(noteRequest: NoteRequest!): NoteGraphQLModel!
+  updateNote(noteRequest: NoteUpdateRequest!): NoteGraphQLModel!
+  newAuthor(authorRequest: AuthorRequest!): AuthorGraphQLModel!
+}
+
+input MessageRequest {
+  content: String!
+}
+
+input FolderRequest {
+  name: String!
+}
+
+input NoteRequest {
+  folderId: String!
+}
+
+input NoteUpdateRequest {
+  _id: String!
+  content: String!
+}
+
+input AuthorRequest {
+  uid: String!
+  name: String!
+}
+
+type Subscription {
+  notification: MessageGraphQLModel!
+}

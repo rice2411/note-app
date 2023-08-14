@@ -1,0 +1,26 @@
+.folder-list {
+  width: 100%;
+  background-color: #7d9d9c;
+  height: 100%;
+  text-align: left;
+  overflow-y: auto;
+  max-width: 250px;
+  min-width: 250px;
+}
+.sub-header {
+  font-weight: bold;
+  color: white;
+  margin-bottom: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  h3 {
+    margin: 0;
+  }
+  mat-icon {
+    cursor: pointer;
+  }
+}
+.active {
+  background-color: rgb(255, 211, 140) !important;
+}

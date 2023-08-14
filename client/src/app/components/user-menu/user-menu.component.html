@@ -1,0 +1,9 @@
+<div class="user-menu">
+  <div [matMenuTriggerFor]="menu" style="display: flex; align-self: flex-end">
+    <p>{{ user.displayName }}</p>
+    <img src="{{ user.photoURL }}" style="margin-left: 10px" alt="" />
+  </div>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item (click)="logout()">Logout</button>
+  </mat-menu>
+</div>

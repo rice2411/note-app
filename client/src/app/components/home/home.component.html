@@ -1,0 +1,11 @@
+<section class="main" *ngIf="!isLoading">
+  <h2 style="margin-bottom: 20px">Note App</h2>
+  <div class="right">
+    <app-user-menu></app-user-menu>
+    <app-push-notification></app-push-notification>
+  </div>
+  <div class="note-main">
+    <app-folder-list></app-folder-list>
+    <div style="width: 70%"><router-outlet></router-outlet></div>
+  </div>
+</section>

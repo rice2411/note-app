@@ -1,0 +1,30 @@
+.wrapper {
+  display: flex;
+  height: 100%;
+}
+.note-list {
+  min-width: 100px;
+  background-color: #f0ebe3;
+  height: 100%;
+  text-align: left;
+  display: flex;
+  width: 100%;
+}
+.sub-header {
+  font-weight: bold;
+  color: black;
+  margin-bottom: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  h3 {
+    margin: 0;
+  }
+  mat-icon {
+    cursor: pointer;
+    color: gray;
+  }
+}
+.active {
+  background-color: rgb(255, 211, 140) !important;
+}

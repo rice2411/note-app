@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "note-app-5966e": {
+      "hosting": {
+        "client": [
+          "note-app-5966e"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "note-app-5966e"
+  }
+}

@@ -1,0 +1,32 @@
+.right {
+  display: flex;
+  justify-content: right;
+  margin-bottom: 10px;
+  margin-left: auto;
+  align-items: center;
+}
+.main {
+  text-align: center;
+  margin-right: auto; /* 1 */
+  margin-left: auto; /* 1 */
+
+  max-width: 900px; /* 2 */
+
+  padding-right: 10px; /* 3 */
+  padding-left: 10px; /* 3 */
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.note-main {
+  min-width: 1000px;
+  box-shadow: 0px 0px 15px 0px rgb(193, 193, 193) !important;
+  height: 50vh;
+  width: fit-content;
+  display: flex;
+  overflow: hidden;
+}
+.mat-grid-tile-content {
+  align-items: flex-start !important;
+}
